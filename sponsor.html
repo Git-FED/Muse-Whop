@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sponsor Git-FED</title>
+<link rel="icon" type="image/svg+xml" href="assets/muse-favicon.svg">
+<style>
+  :root { color-scheme: dark; }
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; padding: 24px; background: #070a12; font-family: system-ui, sans-serif; }
+  .gh-sponsor-card { --card-w: 600px; --card-h: 225px; --crop: 150px; position: relative; width: var(--card-w); max-width: 100%; height: var(--crop); overflow: hidden; border-radius: 12px; background: #fff; box-shadow: 0 1px 2px rgba(0,0,0,.06),0 8px 24px -10px rgba(0,0,0,.18); transition: transform .18s ease, box-shadow .18s ease; }
+  .gh-sponsor-card iframe { display:block; border:0; margin:0; width:var(--card-w); height:var(--card-h); color-scheme:light dark; background:transparent; }
+  .gh-sponsor-card:hover { transform:translateY(-2px); box-shadow:0 2px 4px rgba(0,0,0,.07),0 14px 32px -12px rgba(0,0,0,.25); }
+  @media (prefers-color-scheme: dark) { .gh-sponsor-card { background:#0d1117; box-shadow:0 0 0 1px rgba(255,255,255,.06),0 8px 24px -10px rgba(0,0,0,.6); } }
+  @media (prefers-reduced-motion: reduce) { .gh-sponsor-card,.gh-sponsor-card:hover { transition:none; transform:none; } }
+  @media (max-width: 640px) { .gh-sponsor-card { --s:.72; width:calc(var(--card-w) * var(--s)); height:calc(var(--crop) * var(--s)); } .gh-sponsor-card iframe { transform:scale(var(--s)); transform-origin:0 0; } }
+</style>
+</head>
+<body>
+  <div class="gh-sponsor-card">
+    <iframe src="https://github.com/sponsors/Git-FED/card" title="Sponsor Git-FED" width="600" height="225" frameborder="0" scrolling="no" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <noscript><a href="https://github.com/sponsors/Git-FED">Sponsor Git-FED on GitHub</a></noscript>
+  </div>
+</body>
+</html>
